@@ -23,19 +23,19 @@
 
 * 在springmvc.xml 配置处理器映射器、处理器适配器和视图解析器
 ```xml
-	<!--开启注解扫描-->
-	<context:component-scan base-package="com.lyb"></context:component-scan>
+  <!--开启注解扫描-->
+  <context:component-scan base-package="com.lyb"></context:component-scan>
 
-	<!--配置视图解析器-->
-	<bean id="internalResourceViewResolver"
-	      class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-	<!--视图解析文件路径-->
-	<property name="prefix" value="/WEB-INF/pages/"/>
-	<!--文件的后缀名-->
-	<property name="suffix" value=".jsp"/>
-	</bean>
-	<!--开启对springMVC注解的支持1.处理器映射器 2.处理器处理器适配器-->
-	<mvc:annotation-driven/>
+  <!--配置视图解析器-->
+  <bean id="internalResourceViewResolver"
+        class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+  <!--视图解析文件路径-->
+  <property name="prefix" value="/WEB-INF/pages/"/>
+  <!--文件的后缀名-->
+  <property name="suffix" value=".jsp"/>
+  </bean>
+  <!--开启对springMVC注解的支持1.处理器映射器 2.处理器适配器-->
+  <mvc:annotation-driven/>
 ```
 
 
